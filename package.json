@@ -1,0 +1,23 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "description": "js学习用例",
+  "main": "javascript基本类型.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhonLandy/javascript.git"
+  },
+  "author": "yuanchenglang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhonLandy/javascript/issues"
+  },
+  "homepage": "https://github.com/JhonLandy/javascript#readme",
+  "type": "module"
+}

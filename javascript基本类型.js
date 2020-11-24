@@ -181,3 +181,34 @@
 // 负数有符号右移差异就很大，负数二进制被当做正数二进制来处理转化为10进制
 // const b = -64 //1111 1111 1111 1111 1111 1111 1100 0000
 // console.log(b >>> 5)//134217726
+
+//数组
+// const color = [1, 2, 3]
+// console.log(color.toString())//类似 xx.toString(2) 无效
+// console.log(color.valueOf()) 
+
+
+
+
+/******模块*******/
+//逻辑分块，各自封装，相互独立，各自决定对外暴露变量、方法
+// import fn from './test/moduleA.js';
+// fn()//2 
+// fn()//3 
+// fn()//4 
+// fn()//5 
+// fn()//6 
+
+
+/************迭代器&生成器************/
+function* fn(value) {
+    console.log(value)
+    console.log(yield)
+    console.log(yield)
+    console.log(yield)
+}
+const run = fn(1)
+run.next()//1，第一次执行next是为了执行生成器函数，所以这里只执行了console.log(value)这一步
+run.next(2)//2，这里执行 console.log(yield)
+run.next(3)//3，这里执行 console.log(yield)
+run.next(4)//4，这里执行 console.log(yield)
